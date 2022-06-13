@@ -1,0 +1,95 @@
+header{
+    padding: 20px 0;
+    background: #bbbbbb;
+}
+
+.caixa{
+    position: relative;/* aqui é a posiçao relativa a caixa que criamos aquela <div> no html */
+    margin: 0 auto; /* isso aqui significa que  pra cima e pra baixo o espaçamento é zero . e da direita e esquerda seja calculada automatica */
+    width: 940px;/*  isso aqui é uma largura fixa , padrao que usamos */
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+
+}
+
+nav li{
+    display : inline;
+    margin: 0 0 0 15px ; /* espaço entre as palavras do menus, seguindo essa ordem (topo, direta, baixo , esquerda) */
+    
+}
+nav a {
+
+    text-transform: uppercase; /*  transformando o texto em  letras mauscula  */
+    color: #000000;
+    font-weight: bold;/* colocando o texto em negrito*/
+    font-size: 22px;  
+    text-decoration: none; /* ele tira a decoração do texto , no caso o sublinhado que estava embaixo dos menus*/
+}
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    
+    margin:  0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #000000 ;
+    border-width: 2px;
+    border-style: solid;
+    border: 2px solid #000000; /*  esse modo de marcar resume o 
+     border-color,border-width e border-style. desse modo usaremos este em nosso css*/
+     border-radius: 10px;
+}
+.produtos li:hover {
+    border-color: #c78c19;
+    
+}
+
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produtos li:active{
+    border-color: green;
+}
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0
+    
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-preço{
+    font-weight: bold;
+    font-size: 22px;
+    margin-top:  10px;
+}
+.produto-descrição{
+    font-size: 18px;
+}
+
+footer{
+    
+    text-align: center;
+    background: url("bg.jpg"); /* deste modo como colocamos imagem no css */
+    padding: 40px 0;
+
+
+}
+.copyrigth{
+    color: blanchedalmond;
+    font-size: 13px;
+    margin: 20px 0;
+}

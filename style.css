@@ -1,0 +1,70 @@
+
+.caixa1{
+    
+    left: 70%;
+    position: relative;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    padding: 1px;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+
+#baner{
+    width: 100%;
+}
+.principal{
+    background: #CCCCCC;
+    padding: 30px;
+}
+.titulo-principal{
+    padding-left: 20px;
+}
+.titulo-centralizado{
+    text-align: center;
+}
+
+P{
+    text-align: center;
+    
+}
+#missao{
+   font-size: 20px
+   
+}
+em strong{
+    color: red;
+}
+.itens{
+    
+    font-style:italic;
+}
+.beneficios{
+    background:#ffffff;
+    padding: 20px;
+}
+
+ul{
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+
+#imgbeneficios{
+    width: 50%;
+}

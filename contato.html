@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Barbearia Alura</title>
+    <link rel="stylesheet" href="reset.css">   <!-- Atenção o reset sempre deve ser colocado antes do nosso arqquivo css , primeiro ele depois o nosso arquivo css-->
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header>
+        <div class="caixa"> <!-- fizemos essa div , para definer o cabeçalho de cima da pagina e conceguir centralizar o menus-->
+            <h1><img src="logo.png" alt="logo da barbearia alura"></h1>
+        <nav>
+            <ul class="navegacao">
+                <li><a href="primeiro.html">HOME</a></li>
+                <li><a href="produtos.html">PRODUTOS</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+        
+        </div>
+        
+    </header>
+
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required  placeholder="Seuemail@dominio.com"> 
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="menssagem">Menssagem</label>
+            <textarea cols="60" rows="10" id="menssagem" class="input-padrao"></textarea>
+
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
+                <label for="radio-email"><input type="radio"  name="contato" value="email" id="radio-email"> Email</label>
+                    
+
+                <label for="radio-telefone"> <input type="radio" name="contato"  value="telefone" id="radio-telefone">Telefone</label>
+                    
+
+                <label for="radio-Whatsapp"> <input type="radio"  name="contato"  value="whatsapp" id="radio-Whatsapp" checked> WhatsApp</label>
+                    
+            </fieldset>
+            
+            <fieldset>
+                <legend> Qual opção seria melhor para você ?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+          
+
+            <label><input type="checkbox"  checked>Gostaria de receber nossas novidades por email?</label>
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+        
+        <table> <!-- criamos aqui uma tabela-->
+            <thead> <!-- aqui é o topo da babela por isso usamos essa tag -->
+                <tr><!-- tr = coluna da nossa tabela -->
+                    <th>Dia</th><!-- td = a linha da nossa tabela | mas aqui usamos th q é uma tag referencia ao thead da tabela-->
+                    <th>Horário</th>
+                </tr>
+            </thead>
+
+         <tbody><!-- aqui é o meio(corpo) da tabela onde tem linhas e informaçoes-->
+            <tr>
+                <td>Segunda</td>
+                <td>8h ~ 20h</td>
+            </tr>
+
+            <tr>
+                <td>Quarta</td>
+                <td>8h ~ 20h</td>
+            </tr>
+
+            <tr>
+                <td>Sexta</td>
+                <td>8h ~ 20h</td>
+            </tr>
+            
+         </tbody>
+
+        </table>
+    </main>
+
+    <footer>
+        <img src="logo-branco.png " alt="logo da barbearia alura">
+        <p class="copyrigth">	
+            &copy; Copyright barbearia Alura 2022</p>
+    </footer>
+</body>
+</html>

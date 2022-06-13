@@ -1,0 +1,104 @@
+header{
+    padding: 20px 0;
+    background: #bbbbbb;
+}
+
+.caixa{
+    position: relative;/* aqui é a posiçao relativa a caixa que criamos aquela <div> no html */
+    margin: 0 auto; /* isso aqui significa que  pra cima e pra baixo o espaçamento é zero . e da direita e esquerda seja calculada automatica */
+    width: 940px;/*  isso aqui é uma largura fixa , padrao que usamos */
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+
+}
+
+nav li{
+    display : inline;
+    margin: 0 0 0 15px ; /* espaço entre as palavras do menus, seguindo essa ordem (topo, direta, baixo , esquerda) */
+    
+}
+nav a {
+
+    text-transform: uppercase; /*  transformando o texto em  letras mauscula  */
+    color: #000000;
+    font-weight: bold;/* colocando o texto em negrito*/
+    font-size: 22px;  
+    text-decoration: none; /* ele tira a decoração do texto , no caso o sublinhado que estava embaixo dos menus*/
+}
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+
+
+
+
+footer{
+    
+    text-align: center;
+    background: url("bg.jpg"); /* deste modo como colocamos imagem no css */
+    padding: 40px 0;
+
+
+}
+.copyrigth{
+    color: blanchedalmond;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+main{ /* aqui estamos centralizando nosso formulario na pagina */
+    width: 940px;
+    margin:0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px
+
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    width: 50%;
+}
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    transition: 1s all; /*  esse elemento é responsavel pela transição*/
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background:  darkgrey;
+    transform: scale(1.1);/*  aumenta em 20% o botão de enviar*/
+}
+
+table{
+    margin: 20px 0 40px;
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
